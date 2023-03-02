@@ -18,9 +18,10 @@
     "verify": "yarn lint && yarn build && yarn test"
   },
   "devDependencies": {
+    "@cfp/cli": "*",
+    "@cfp/eslint-config": "*",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "eslint-config-cfp": "*",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "latest",
@@ -29,6 +30,7 @@
   "resolutions": {
     "eslint": "8.36.0"
   },
+  "prettier": "@cfp/eslint-config/prettier",
   "engines": {
     "node": ">=16.0.0"
   },

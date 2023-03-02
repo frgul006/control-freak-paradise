@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@cfp/eslint-config": "*",
     "@cfp/tsconfig": "*",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.22",

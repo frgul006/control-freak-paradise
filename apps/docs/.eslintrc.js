@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["cfp-next"],
-};
+  extends: ['@cfp/eslint-config/next'],
+}

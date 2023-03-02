@@ -1,23 +1,24 @@
-import chalk from "chalk";
+/* eslint-disable security-node/detect-crlf */
+import chalk from 'chalk'
 
 export const logInfo = (...args: unknown[]) => {
-  console.log(...args);
-};
+  console.log(...args)
+}
 
-export const log = logInfo;
+export const log = logInfo
 
 export const logVerbose = (message: unknown, ...args: unknown[]) => {
-  console.log("[verbose]", chalk.gray(message), ...args);
-};
+  console.log('[verbose]', chalk.gray(message), ...args)
+}
 
 export const logWarning = (message: unknown, ...args: unknown[]) => {
-  console.warn("🟡", chalk.yellow(message), ...args);
-};
+  console.warn('🟡', chalk.yellow(message), ...args)
+}
 
 export const logError = (message: unknown, ...args: unknown[]) => {
-  console.error("❌", chalk.red(message), ...args);
-};
+  console.error('❌', chalk.red(message), ...args)
+}
 
 export const logSuccess = (message: unknown, ...args: unknown[]) => {
-  console.log(`✅`, chalk.green(message), ...args);
-};
+  console.log(`✅`, chalk.green(message), ...args)
+}
