@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["turbo", "prettier"],
+  extends: ["react-app", "react-app/jest", "turbo", "prettier"],
 };

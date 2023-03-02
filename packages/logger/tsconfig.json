@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "extends": "@cfp/tsconfig/base.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+}
