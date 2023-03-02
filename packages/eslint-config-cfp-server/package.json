@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-cfp-server",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-cfp": "*",
+    "eslint-config-next": "13.2.3",
+    "eslint-plugin-react": "7.32.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
