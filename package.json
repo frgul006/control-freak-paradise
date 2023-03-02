@@ -11,7 +11,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "turbo run test --color",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@cfp/eslint-config": "*",
@@ -25,5 +27,11 @@
     "node": "18.14.2",
     "yarn": "1.22.19"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2"
+  }
 }

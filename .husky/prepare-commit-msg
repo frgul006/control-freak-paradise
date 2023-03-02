@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+# shellcheck source=/dev/null
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Avoid modifying commit message if a `git rebase` is in progress
+if test ! -d "$(git rev-parse --git-path rebase-merge)" && test ! -d "$(git rev-parse --git-path rebase-apply) 2>/dev/null"; then
+    # Adds JIRA ticket reference from branch name to commit message body if not present
+    JIRA_REF=$(git symbolic-ref HEAD | grep -Eos "([A-Z]{3,})-([0-9]{2,})" || true)
+    if [ -n "$JIRA_REF" ]; then
+        grep -qs "$JIRA_REF" "$1" || printf "\n%s" "$JIRA_REF" >>"$1"
+    fi
+fi
