@@ -14,7 +14,8 @@
     "lint": "turbo run lint",
     "test": "turbo run test --color",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "verify": "yarn lint && yarn build && yarn test"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",

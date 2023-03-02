@@ -10,6 +10,7 @@
       "outputs": ["dist/**", ".next/**"]
     },
     "lint": {
+      "dependsOn": ["^build"],
       "outputs": []
     },
     "dev": {
@@ -18,7 +19,7 @@
       "persistent": true
     },
     "test": {
-      "dependsOn": ["build"],
+      "dependsOn": ["^build"],
       "outputs": []
     }
   }
