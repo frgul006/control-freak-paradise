@@ -25,6 +25,8 @@ This repo has some additional tools already setup for you:
 - [Prettier](https://prettier.io) for code formatting
 - [Volta](https://docs.volta.sh/) for managing JavaScript command-line tools
 - [Renovate](https://docs.renovatebot.com/) for automated dependency updates
+- [Husky](https://typicode.github.io/husky/#/) for hooks when you commit or push
+- [commitlint](https://commitlint.js.org/#/) for linting commit messages
 
 ### Build
 
@@ -41,3 +43,10 @@ To develop all apps and packages, run the following command:
 ```bash
 yarn run dev
 ```
+
+## FAQ
+
+### Why Renovate over Dependabot?
+
+This repository is intended to work in enterprise settings where you're less likely to use GitHub for source-control.
+I wanted a dependency updater that can be run on-prem and that supports updating a larger set of ecosystems than Dependabot (such as Docker).
