@@ -22,7 +22,7 @@ This repo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes th
 - `@cfp/eslint-config-server`: `eslint` config for server side apps (`eslint-config-turbo` and `eslint-config-prettier`)
 - `@cfp/jest-presets`: Jest configurations
 - `@cfp/tsconfig`: `tsconfig.json`s used throughout the monorepo
-- `@cfp/logger`: Basic logger wrappper around console.log
+- `@cfp/logger`: Basic logger wrapper around console.log
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
