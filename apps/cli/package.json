@@ -9,7 +9,7 @@
   "scripts": {
     "build": "yarn tsc && yarn chmod",
     "chmod": "chmod u+x ./bin/index.js",
-    "clean": "rm -rf bin",
+    "clean": "rm ./bin/*(.)",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
     "test": "jest --detectOpenHandles",
     "dev": "yarn tsc --watch",
