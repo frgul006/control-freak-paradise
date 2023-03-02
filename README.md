@@ -1,6 +1,6 @@
 # control-freak-paradise
 
-This is a Yarn (Berry) starter monorepo using turborepo with additional tooling.
+This is a opinionated Yarn (Berry) starter monorepo using turborepo with additional tooling.
 
 ## What's inside?
 
