@@ -19,7 +19,7 @@
     "@cfp/jest-presets": "*",
     "@cfp/tsconfig": "*",
     "@types/jest": "^29.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-config-cfp": "*",
     "jest": "^29.0.0",
     "typescript": "^4.5.3"
