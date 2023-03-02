@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "branchPrefix": "renovate/",
+  "commitMessagePrefix": "",
+  "commitBody": "CFP-0000",
+  "rebaseWhen": "behind-base-branch",
+  "semanticCommits": "enabled",
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "enabled": true
+    }
+  ]
+}
