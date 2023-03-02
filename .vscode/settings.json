@@ -1,4 +1,5 @@
 {
   "jest.autoRun": "off",
-  "jest.jestCommandLine": "yarn test"
+  "jest.jestCommandLine": "yarn test",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"]
 }

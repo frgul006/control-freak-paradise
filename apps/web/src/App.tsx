@@ -1,7 +1,9 @@
-import React from "react";
-import logo from "./logo.svg";
-import { Button } from "@cfp/ui";
-import "./App.css";
+import './App.css'
+
+import { Button } from '@cfp/ui'
+import React from 'react'
+
+import logo from './logo.svg'
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

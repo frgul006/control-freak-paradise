@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["cfp"],
-};
+  extends: ['@cfp/eslint-config/typescript'],
+}

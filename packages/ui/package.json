@@ -12,6 +12,7 @@
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
+    "@cfp/eslint-config": "*",
     "@cfp/tsconfig": "*",
     "@types/react": "^18.0.22",
     "eslint": "8.36.0",

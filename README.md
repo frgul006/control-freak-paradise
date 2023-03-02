@@ -4,7 +4,8 @@ This is a opinionated Yarn (Berry) starter monorepo using turborepo with additio
 
 ## What's inside?
 
-This repo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes the following packages/apps:
+This repo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes the following
+packages/apps:
 
 ### Apps and Packages
 
@@ -17,9 +18,11 @@ This repo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes th
 #### Packages
 
 - `@cfp/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@cfp/eslint-config`: `eslint` config for client side apps (includes `eslint-config-react-app`, `eslint-config-turbo` and `eslint-config-prettier`)
+- `@cfp/eslint-config`: `eslint` config for client side apps (includes `eslint-config-react-app`,
+  `eslint-config-turbo` and `eslint-config-prettier`)
 - `@cfp/eslint-config-next`: `eslint` config for next apps (includes `eslint-config-next`)
-- `@cfp/eslint-config-server`: `eslint` config for server side apps (`eslint-config-turbo` and `eslint-config-prettier`)
+- `@cfp/eslint-config-server`: `eslint` config for server side apps (`eslint-config-turbo` and
+  `eslint-config-prettier`)
 - `@cfp/jest-presets`: Jest configurations
 - `@cfp/tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `@cfp/logger`: Basic logger wrapper around console.log
@@ -99,5 +102,6 @@ yarn run clean && yarn && yarn run verify
 
 ### Why Renovate over Dependabot?
 
-This repository is intended to work in enterprise settings where you're less likely to use GitHub for source-control.
-I wanted a dependency updater that can be run on-prem and that supports updating a larger set of ecosystems than Dependabot (such as Docker).
+This repository is intended to work in enterprise settings where you're less likely to use GitHub
+for source-control. I wanted a dependency updater that can be run on-prem and that supports updating
+a larger set of ecosystems than Dependabot (such as Docker).

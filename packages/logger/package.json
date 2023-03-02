@@ -16,15 +16,15 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@cfp/eslint-config": "*",
     "@cfp/jest-presets": "*",
     "@cfp/tsconfig": "*",
     "@types/jest": "^29.0.0",
     "eslint": "^8.0.0",
-    "eslint-config-cfp": "*",
     "jest": "^29.0.0",
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "chalk": "^5.2.0"
+    "chalk": "^4"
   }
 }
