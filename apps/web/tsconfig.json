@@ -1,5 +1,4 @@
 {
-  "extends": "@cfp/tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "extends": "@cfp/tsconfig/react-app.json",
   "exclude": ["node_modules"]
 }
