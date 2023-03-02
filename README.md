@@ -9,7 +9,7 @@ This repo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes th
 ### Apps and Packages
 
 - `@cfp/docs`: a [Next.js](https://nextjs.org/) app
-- `@cfp/web`: another [Next.js](https://nextjs.org/) app
+- `@cfp/web`: a [Create React App](https://create-react-app.dev/) app
 - `@cfp/ui`: a stub React component library shared by both `web` and `docs` applications
 - `@cfp/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@cfp/tsconfig`: `tsconfig.json`s used throughout the monorepo

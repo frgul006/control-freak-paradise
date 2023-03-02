@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "clean": "turbo run clean",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test --color",
@@ -16,9 +17,9 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@cfp/eslint-config": "*",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "eslint-config-cfp": "*",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "latest",

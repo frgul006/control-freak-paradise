@@ -41,7 +41,7 @@ yarn-error.log*
 # Husky
 .husky/_
 
-dist/
+**/dist/
 reports/
 
 # dotenv
