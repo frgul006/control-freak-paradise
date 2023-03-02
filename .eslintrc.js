@@ -1,10 +1,9 @@
 module.exports = {
   root: true,
-  // This tells ESLint to load the config from the package `eslint-config-cfp`
-  extends: ["cfp"],
+  extends: ['@cfp/eslint-config/typescript'],
   settings: {
     next: {
-      rootDir: ["apps/*/"],
+      rootDir: ['apps/*/'],
     },
   },
-};
+}

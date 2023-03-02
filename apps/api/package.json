@@ -21,6 +21,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@cfp/eslint-config": "*",
     "@cfp/jest-presets": "*",
     "@cfp/tsconfig": "*",
     "@types/body-parser": "^1.19.0",
@@ -33,7 +34,6 @@
     "esbuild": "^0.17.0",
     "esbuild-register": "^3.3.2",
     "eslint": "^8.0.0",
-    "eslint-config-cfp-server": "*",
     "jest": "^29.0.0",
     "nodemon": "^2.0.15",
     "supertest": "^6.1.3",
