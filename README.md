@@ -14,6 +14,7 @@ packages/apps:
 - `@cfp/docs`: a [Next.js](https://nextjs.org/) app
 - `@cfp/web`: a [Create React App](https://create-react-app.dev/) app
 - `@cfp/api`: an [Express](https://expressjs.com/) server
+- `@cfp/cli`: a basic cli skeleton
 
 #### Packages
 
