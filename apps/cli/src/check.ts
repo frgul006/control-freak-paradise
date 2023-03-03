@@ -6,6 +6,7 @@ const argsSchema = z.object({
 })
 
 export const check = async (args: unknown) => {
+  const CLI_MSG = process.env.CFP_CLI_MSG ?? 'DEFAULT_CFP_CLI_MSG'
   const parsedArgs = argsSchema.safeParse(args)
   if ('error' in parsedArgs) {
     logError('Invalid arguments passed to deploy function', parsedArgs)
@@ -15,5 +16,5 @@ export const check = async (args: unknown) => {
   if (verbose) {
     logVerbose('check', parsedArgs.data)
   }
-  log('Checking')
+  log(`Checking env "${CLI_MSG}"`)
 }

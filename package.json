@@ -20,10 +20,10 @@
   "devDependencies": {
     "@cfp/cli": "*",
     "@cfp/eslint-config": "*",
-    "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "@commitlint/cli": "17.x",
+    "@commitlint/config-conventional": "17.x",
+    "husky": "8.x",
+    "lint-staged": "13.x",
     "prettier": "latest",
     "turbo": "latest"
   },
