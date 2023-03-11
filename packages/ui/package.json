@@ -14,7 +14,7 @@
   "devDependencies": {
     "@cfp/tsconfig": "*",
     "@types/react": "^18.0.22",
-    "eslint": "8.35.0",
+    "eslint": "8.36.0",
     "eslint-config-cfp": "*",
     "react": "^18.2.0",
     "tsup": "^6.0.0",
