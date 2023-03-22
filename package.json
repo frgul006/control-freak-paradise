@@ -26,12 +26,15 @@
     "prettier": "latest",
     "turbo": "latest"
   },
+  "resolutions": {
+    "eslint": "8.35.0"
+  },
   "engines": {
     "node": ">=16.0.0"
   },
   "volta": {
     "node": "18.15.0",
-    "yarn": "1.22.19"
+    "yarn": "3.5.0"
   },
   "packageManager": "yarn@3.5.0"
 }
