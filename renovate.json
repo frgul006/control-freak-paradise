@@ -9,7 +9,17 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "enabled": true
+      "enabled": true,
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["lint", "prettier"],
+      "automerge": true
     }
-  ]
+  ],
+  "automergeType": "branch",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
 }
