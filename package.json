@@ -27,7 +27,7 @@
     "turbo": "latest"
   },
   "resolutions": {
-    "eslint": "8.35.0"
+    "eslint": "8.36.0"
   },
   "engines": {
     "node": ">=16.0.0"
