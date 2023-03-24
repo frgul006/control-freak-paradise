@@ -1,3 +1,5 @@
+import fs from 'fs'
+
 import { check } from './check'
 
 jest.mock('chalk', () => ({
@@ -7,11 +9,37 @@ jest.mock('chalk', () => ({
   green: jest.fn((...args) => args),
 }))
 
-jest.spyOn(process, 'exit').mockImplementation(
+jest.mock('./runCommand', () => ({
+  runCommand: jest.fn(() => {
+    return new Promise<{ stdout: string; stderr: string; exitCode: number | null }>((resolve) => {
+      resolve({
+        stdout: '0.0.0',
+        stderr: '',
+        exitCode: 0,
+      })
+    })
+  }),
+}))
+
+jest.spyOn(fs, 'readFileSync').mockImplementation(
   jest.fn(() => {
-    throw new Error('mockExit')
+    return JSON.stringify([
+      {
+        name: 'docker',
+        version: '^20.10.23',
+        check: "docker version --format '{{.Server.Version}}'",
+        install: 'brew install docker',
+      },
+      {
+        name: 'volta',
+        version: '^1.1.1',
+        check: 'volta -v',
+        install: "curl -s https://get.volta.sh | bash -s -- --version '$VERSION'",
+      },
+    ])
   }),
 )
+
 jest.spyOn(global.console, 'log').mockImplementation(jest.fn())
 jest.spyOn(global.console, 'warn').mockImplementation(jest.fn())
 jest.spyOn(global.console, 'error').mockImplementation(jest.fn())

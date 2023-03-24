@@ -1,0 +1,14 @@
+[
+  {
+    "name": "docker",
+    "version": "^20.10.23",
+    "check": "docker version --format '{{.Server.Version}}'",
+    "install": "brew install docker"
+  },
+  {
+    "name": "volta",
+    "version": "^1.1.1",
+    "check": "volta -v",
+    "install": "curl -s https://get.volta.sh | bash -s -- --version '$VERSION'"
+  }
+]
