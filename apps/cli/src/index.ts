@@ -4,7 +4,15 @@ import * as dotenv from 'dotenv'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs/yargs'
 
-import { check } from './check' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import { check } from './check/check'
+
+// Ensure we run the process in monorepo root directory
+const cwd = process.cwd()
+if (!cwd.endsWith('control-freak-paradise')) {
+  const rootDir = cwd.replace(/^(.*control-freak-paradise).*$/, '$1')
+  process.chdir(rootDir)
+}
+
 dotenv.config()
 
 // eslint-disable-next-line no-unused-expressions

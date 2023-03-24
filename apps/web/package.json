@@ -19,6 +19,7 @@
     "web-vitals": "^3.0.0"
   },
   "devDependencies": {
+    "@cfp/cli": "*",
     "@cfp/eslint-config": "*",
     "@cfp/tsconfig": "*",
     "@testing-library/dom": "^9",

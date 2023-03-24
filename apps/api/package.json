@@ -21,6 +21,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@cfp/cli": "*",
     "@cfp/eslint-config": "*",
     "@cfp/jest-presets": "*",
     "@cfp/tsconfig": "*",
