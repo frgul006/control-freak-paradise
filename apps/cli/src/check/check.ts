@@ -1,10 +1,9 @@
 import { log, logError, logSuccess, logVerbose } from '@cfp/logger'
 import chalk from 'chalk'
+import { $ } from 'execa'
 import fs from 'fs'
 import { satisfies } from 'semver'
 import { z } from 'zod'
-
-import { runCommand } from './runCommand'
 
 const optionsSchema = z.object({
   verbose: z.boolean(),
@@ -43,34 +42,30 @@ export const check = async (args: unknown) => {
       log(`Checking ${tool.name}...`)
       verbose && logVerbose(`${tool.name}`, tool)
 
-      const { stdout, stderr, exitCode } = await runCommand(tool.check)
-      verbose && logVerbose(`${tool.check}: stdout`, stdout)
-      verbose && logVerbose(`${tool.check}: stderr`, stderr)
-      verbose && logVerbose(`${tool.check}: exitCode`, exitCode)
+      try {
+        const { stdout } = await $`${tool.check}`
+        const result = {
+          tool,
+          actual: stdout,
+        }
 
-      const commandFailed = exitCode != null && exitCode > 0
-      if (commandFailed) {
+        if (satisfies(stdout, tool.version)) {
+          return {
+            ...result,
+            status: 'INSTALLED',
+          }
+        } else {
+          return {
+            ...result,
+            status: 'WRONG_VERSION',
+          }
+        }
+      } catch (err) {
+        logError(err)
         return {
           tool,
           actual: '',
           status: 'NOT_INSTALLED',
-        }
-      }
-
-      const result = {
-        tool,
-        actual: stdout.trim(),
-      }
-
-      if (satisfies(stdout.trim(), tool.version)) {
-        return {
-          ...result,
-          status: 'INSTALLED',
-        }
-      } else {
-        return {
-          ...result,
-          status: 'WRONG_VERSION',
         }
       }
     } catch (err) {
