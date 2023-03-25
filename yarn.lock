@@ -5939,7 +5939,7 @@ __metadata:
     husky: 8.x
     lint-staged: 13.x
     listr: ^0.14.3
-    prettier: latest
+    prettier: 2.x
     turbo: latest
   languageName: unknown
   linkType: soft
@@ -13516,12 +13516,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.x, prettier@npm:latest":
-  version: 2.8.6
-  resolution: "prettier@npm:2.8.6"
+"prettier@npm:2.x":
+  version: 2.8.7
+  resolution: "prettier@npm:2.8.7"
   bin:
     prettier: bin-prettier.js
-  checksum: 8ac94fa67aec0e65743ea15ebf954ef2f1e52638abd129dc04e8b49e8bb3224c0233c98df6b5c98efd31bd2a43866590486559438ee4ead09dc81be389068572
+  checksum: fdc8f2616f099f5f0d685907f4449a70595a0fc1d081a88919604375989e0d5e9168d6121d8cc6861f21990b31665828e00472544d785d5940ea08a17660c3a6
   languageName: node
   linkType: hard
 
