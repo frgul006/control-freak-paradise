@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs/yargs'
 
-import { check } from './check/check'
+import { check } from './check/check.js'
 
 // Ensure we run the process in monorepo root directory
 const cwd = process.cwd()

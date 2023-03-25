@@ -15,7 +15,6 @@
     "test": "turbo run test --color",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
-    "postinstall": "yarn build --filter=cli && yarn cfp check",
     "verify": "yarn lint && yarn build && yarn test"
   },
   "devDependencies": {
