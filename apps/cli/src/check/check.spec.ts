@@ -9,6 +9,18 @@ jest.mock('chalk', () => ({
   green: jest.fn((...args) => args),
 }))
 
+jest.mock('execa', () => ({
+  $: jest.fn(() => {
+    return new Promise<{ stdout: string; stderr: string; exitCode: number | null }>((resolve) => {
+      resolve({
+        stdout: '0.0.0',
+        stderr: '',
+        exitCode: 0,
+      })
+    })
+  }),
+}))
+
 jest.mock('./runCommand', () => ({
   runCommand: jest.fn(() => {
     return new Promise<{ stdout: string; stderr: string; exitCode: number | null }>((resolve) => {
