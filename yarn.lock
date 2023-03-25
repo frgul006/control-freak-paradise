@@ -1555,6 +1555,7 @@ __metadata:
     "@cfp/logger": "*"
     "@cfp/tsconfig": "*"
     "@types/jest": ^29.0.0
+    "@types/listr": ^0.14.4
     "@types/node": ^18.0.0
     chalk: ^5
     dotenv: ^16.0.3
@@ -3718,6 +3719,16 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
+"@types/listr@npm:^0.14.4":
+  version: 0.14.4
+  resolution: "@types/listr@npm:0.14.4"
+  dependencies:
+    "@types/node": "*"
+    rxjs: ^6.5.1
+  checksum: 4adad4be1218aa91554411f725acee5dd4aaeacfaa07041c1ad7f7e9acf7adb59f6a49f2a2694e197c87659411fa2402de2672bd54baed394050a1cca6eed1ff
   languageName: node
   linkType: hard
 
@@ -5927,6 +5938,7 @@ __metadata:
     "@commitlint/config-conventional": 17.x
     husky: 8.x
     lint-staged: 13.x
+    listr: ^0.14.3
     prettier: latest
     turbo: latest
   languageName: unknown
@@ -14382,7 +14394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.3.3":
+"rxjs@npm:^6.3.3, rxjs@npm:^6.5.1":
   version: 6.6.7
   resolution: "rxjs@npm:6.6.7"
   dependencies:

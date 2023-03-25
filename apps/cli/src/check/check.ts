@@ -43,7 +43,7 @@ export const check = async (args: unknown) => {
       verbose && logVerbose(`${tool.name}`, tool)
 
       try {
-        const { stdout } = await $`${tool.check}`
+        const { stdout } = await $({ shell: true })`${tool.check}`
         const result = {
           tool,
           actual: stdout,
@@ -93,6 +93,7 @@ export const check = async (args: unknown) => {
 
   const tools = getJson('tools.json')
   log()
+
   const results = await Promise.all(tools.map(checkTool))
 
   const failures = results.filter((r) => r.status !== 'INSTALLED')
