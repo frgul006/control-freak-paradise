@@ -20,7 +20,7 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "eslint-plugin-security-node": "1.x",
-    "eslint-plugin-simple-import-sort": "8.x"
+    "eslint-plugin-simple-import-sort": "10.x"
   },
   "devDependencies": {
     "eslint": "8.x",
