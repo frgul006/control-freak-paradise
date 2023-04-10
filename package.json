@@ -28,7 +28,7 @@
     "turbo": "latest"
   },
   "resolutions": {
-    "eslint": "8.36.0"
+    "eslint": "8.38.0"
   },
   "prettier": "@cfp/eslint-config/prettier",
   "engines": {
